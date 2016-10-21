@@ -39,6 +39,10 @@ body {
 	background-color: #43162d;
 }
 
+.header .active:hover {
+	background-color: #391326;
+}
+
 .header form {
 	float: right;
 }
@@ -52,14 +56,19 @@ body {
 	text-indent: 10px;
 	font: 16px/50px Arial, Helvetica, sans-serif;
 	outline: none;
+	background-color: #f2f2f2;
 }
 
 .header .search::-webkit-search-cancel-button {
 	display: none;
 }
 
+.header form:hover .search {
+	background-color: white;
+}
+
 .header .search:focus {
-	background-color: #f9ecf2;
+	background-color: white;
 }
 
 .header .submit {
@@ -68,13 +77,20 @@ body {
 	margin: 10px 0;
 	border: 0;
 	background: url("search.png");
-	background-color: white;
-	outline: 0;
+	background-color: #f2f2f2;
+	outline: none;
 }
 
 .header .submit:hover {
-	background-color: #f9ecf2;
 	cursor: pointer;
+}
+
+.header form:hover .submit {
+	background-color: white;
+}
+
+.header .search:focus + .submit {
+	background-color: white;
 }
 
 .content {
@@ -84,14 +100,35 @@ body {
 	padding-top: 75px;
 }
 
-.content .banner1 {
+.content .banner {
 	text-align: center;
-	font: 42px/50px "Courier New", Courier, monospace;
 }
 
-.content .banner2 {
-	text-align: center;
+.content .banner img {
+	vertical-align: middle;
+	width: 100px;
+	height: 100px;
+}
+
+.content .banner_1 {
+	display: inline;
+	font: 42px/50px "Courier New", Courier, monospace;
+	color: #602040;
+}
+
+.content .banner_2a {
+	display: inline;
+	font: 18px/50px "Courier New", Courier, monospace;
+}
+
+.content .banner_2b {
+	display: inline;
 	font: italic 18px/50px "Courier New", Courier, monospace;
+}
+
+.content .banner_2c {
+	display: inline;
+	font: 18px/50px "Courier New", Courier, monospace;
 }
 
 .content .article {
@@ -102,10 +139,11 @@ body {
 }
 
 .content .article:hover {
-	background-color: #fdf7fa;
+	border-radius: 1px;
+	box-shadow: 0 0 1px 1px #602040;
 }
 
-.content img {
+.content a img {
 	display: inline;
 	width: 350px;
 	height: 200px;
@@ -165,14 +203,11 @@ body {
 }
 
 .footer {
-	width: 100%;
-	height: 150px;
-	background-color: #602040;
-}
-
-.footer .container {
 	width: 1000px;
+	height: 50px;
 	margin: auto;
+	margin-bottom: 25px;
+	background-color: #602040;
 	font-size: 0;
 }
 
@@ -187,7 +222,7 @@ body {
 	text-decoration: underline;
 }
 
-.footer div div {
+.footer div {
 	float: right;
 	margin: 0px 25px;
 	font: 16px/50px Arial, Helvetica, sans-serif;
