@@ -146,16 +146,17 @@ body {
 	display: inline;
 	width: 350px;
 	height: 200px;
+	border: 1px solid #602040;
 }
 
 .content .article div {
 	display: inline-block;
 	vertical-align: top;
-	width: 575px;
+	width: 573px;
 	margin-left: 25px;
 }
 
-.content .article div a {
+.content .link_article {
 	display: block;
 	text-decoration: none;
 	text-align: justify;
@@ -168,6 +169,15 @@ body {
 	text-indent: 50px;
 	text-align: justify;
 	font: 16px/25px Arial, Helvetica, sans-serif;
+}
+
+.content p a {
+	text-decoration: none;
+	color: #bf4080;
+}
+
+.content p a:hover {
+	color: #993366;
 }
 
 .content .navigation {
