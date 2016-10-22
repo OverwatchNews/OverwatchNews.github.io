@@ -45,6 +45,7 @@ body {
 
 .header form {
 	float: right;
+	margin-right: 25px;
 }
 
 .header .search {
@@ -164,7 +165,7 @@ body {
 	color: black;
 }
 
-.content p {
+.content .article p {
 	margin: 25px 0 0;
 	text-indent: 50px;
 	text-align: justify;
@@ -236,4 +237,30 @@ body {
 	margin: 0px 25px;
 	font: 16px/50px Arial, Helvetica, sans-serif;
 	color: white;
+}
+
+.backdrop {
+	margin-top: 25px;
+	padding: 25px;
+	border: 1px solid #602040;
+}
+
+.backdrop div {
+	margin-bottom: 25px;
+	text-align: center;
+	font: 22px/25px Arial, Helvetica, sans-serif;
+}
+
+.backdrop p {
+	margin: 0;
+	font: 16px/50px Arial, Helvetica, sans-serif;
+}
+
+.backdrop .header_list {
+	margin-top: 25px;
+}
+
+.backdrop ul {
+	margin: 0 0 25px;
+	font: 16px/50px Arial, Helvetica, sans-serif;
 }
